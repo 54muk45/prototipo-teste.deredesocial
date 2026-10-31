@@ -1,0 +1,102 @@
+.cadastro-page,
+.form-page {
+  min-height: calc(100vh - 72px);
+  background: linear-gradient(135deg, #ffffff, var(--verde-claro));
+}
+
+.form-container {
+  max-width: 900px;
+}
+
+.form-card {
+  background: var(--escuro);
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(32,201,151,.25);
+}
+
+.form-icon {
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
+  font-size: 2rem;
+}
+
+.form-section-title {
+  color: var(--verde-claro);
+  font-weight: 700;
+  border-bottom: 2px solid var(--verde);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.form-card .form-label {
+  color: #fff;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 12px 15px;
+  border-color: #dce7e3;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 .2rem rgba(32,201,151,.25);
+}
+
+.form-check-input:checked {
+  background-color: var(--verde);
+  border-color: var(--verde);
+}
+
+.form-card .form-text {
+  color: #b9c7c3;
+}
+
+.voltar-link {
+  color: var(--verde-escuro);
+  text-decoration: none;
+}
+
+.voltar-link:hover { color: var(--verde); }
+
+.auth-choice {
+  max-width: 950px;
+}
+
+.choice-card {
+  height: 100%;
+  padding: 32px;
+  border: 1px solid var(--borda);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--sombra);
+  transition: .2s ease;
+}
+
+.choice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-hover);
+}
+
+.choice-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}

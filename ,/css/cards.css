@@ -1,0 +1,16 @@
+.cards-section {
+  background: var(--cinza);
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.stat-number {
+  color: var(--verde-escuro);
+  font-size: 1.6rem;
+  font-weight: 700;
+}

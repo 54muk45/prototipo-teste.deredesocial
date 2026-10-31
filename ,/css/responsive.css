@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+  body { padding-top: 66px; }
+  .navbar { min-height: 66px; }
+}
+
+@media (max-width: 575px) {
+  .hero-card { padding: 30px 18px; }
+  .display-4 { font-size: 2.4rem; }
+  .form-card { border-radius: 18px; }
+  .choice-card { padding: 25px; }
+}

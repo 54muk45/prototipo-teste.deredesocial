@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConectaTalentos | Conectando talentos e oportunidades</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <header class="hero py-5">
+    <div class="container py-4 py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge-brand">TALENTOS + OPORTUNIDADES</span>
+          <h1 class="display-4 fw-bold mt-3">Conecte-se. Mostre seu talento. Encontre oportunidades.</h1>
+          <p class="lead text-muted mt-3">
+            Uma plataforma para iniciantes encontrarem oportunidades e para contratantes descobrirem novos talentos.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="pages/auth/cadastro.html" class="btn btn-brand btn-lg rounded-pill px-4">
+              Criar meu perfil <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="pages/vagas/vagas.html" class="btn btn-outline-brand btn-lg rounded-pill px-4">
+              Explorar vagas
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <div class="hero-icon"><i class="bi bi-people"></i></div>
+            <h2 class="h4 fw-bold mt-4">Um lugar para começar</h2>
+            <p class="text-muted">
+              Crie seu perfil, apresente suas habilidades e descubra caminhos para transformar conhecimento em experiência.
+            </p>
+            <div class="row g-2 mt-4">
+              <div class="col-4"><div class="mini-card"><i class="bi bi-person"></i><small>Perfis</small></div></div>
+              <div class="col-4"><div class="mini-card"><i class="bi bi-briefcase"></i><small>Vagas</small></div></div>
+              <div class="col-4"><div class="mini-card"><i class="bi bi-calendar-event"></i><small>Eventos</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="section-label">ENCONTRE O QUE PROCURA</span>
+        <h2 class="fw-bold mt-2">Explore a plataforma</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="pages/vagas/vagas.html" class="search-card">
+            <div class="search-icon"><i class="bi bi-search"></i></div>
+            <h3 class="h5 fw-bold">Buscar vagas</h3>
+            <p class="text-muted">Encontre oportunidades por área, local e tipo.</p>
+            <span>Explorar vagas <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="pages/perfis/perfil-iniciante.html" class="search-card">
+            <div class="search-icon"><i class="bi bi-person-vcard"></i></div>
+            <h3 class="h5 fw-bold">Criar perfil</h3>
+            <p class="text-muted">Apresente suas habilidades, projetos e links.</p>
+            <span>Ver perfil <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="pages/eventos/eventos.html" class="search-card">
+            <div class="search-icon"><i class="bi bi-calendar2-event"></i></div>
+            <h3 class="h5 fw-bold">Participar de eventos</h3>
+            <p class="text-muted">Descubra encontros, workshops e oportunidades.</p>
+            <span>Ver eventos <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section py-5">
+    <div class="container py-3">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+        <div>
+          <span class="section-label">OPORTUNIDADES</span>
+          <h2 class="fw-bold mt-2 mb-0">Vagas recentes</h2>
+        </div>
+        <a href="pages/vagas/vagas.html" class="btn btn-outline-brand rounded-pill">Ver todas</a>
+      </div>
+      <div id="vagasRecentes" class="row g-4"></div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="section-label">COMO FUNCIONA</span>
+        <h2 class="fw-bold mt-2">Comece em poucos passos</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="step-card text-center"><div class="step-number">1</div><h3 class="h5 fw-bold">Crie seu perfil</h3><p class="text-muted mb-0">Mostre quem você é, suas habilidades e seus projetos.</p></div></div>
+        <div class="col-md-4"><div class="step-card text-center"><div class="step-number">2</div><h3 class="h5 fw-bold">Explore oportunidades</h3><p class="text-muted mb-0">Pesquise vagas, eventos e pessoas conectadas aos seus objetivos.</p></div></div>
+        <div class="col-md-4"><div class="step-card text-center"><div class="step-number">3</div><h3 class="h5 fw-bold">Faça conexões</h3><p class="text-muted mb-0">Entre em contato e transforme conexões em oportunidades.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section py-5">
+    <div class="container py-4 text-center">
+      <h2 class="fw-bold">Pronto para começar?</h2>
+      <p class="lead mb-4">Crie seu perfil e faça parte do ConectaTalentos.</p>
+      <a href="pages/auth/cadastro.html" class="btn btn-light btn-lg rounded-pill px-5">Criar minha conta</a>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/pages/home.js"></script>
+</body>
+</html>

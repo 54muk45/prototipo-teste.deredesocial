@@ -1,0 +1,39 @@
+.navbar {
+  min-height: 72px;
+}
+
+.navbar-brand {
+  font-size: 1.15rem;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--verde) !important;
+}
+
+.btn-brand {
+  background: var(--verde);
+  border-color: var(--verde);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background: var(--verde-escuro);
+  border-color: var(--verde-escuro);
+  color: #fff;
+}
+
+.btn-outline-brand {
+  color: var(--verde-escuro);
+  border-color: var(--verde);
+}
+
+.btn-outline-brand:hover {
+  background: var(--verde);
+  border-color: var(--verde);
+  color: #fff;
+}
